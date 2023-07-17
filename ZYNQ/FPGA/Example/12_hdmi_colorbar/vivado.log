@@ -1,0 +1,186 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 16 09:33:44 2021
+# Process ID: 16652
+# Current directory: F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent99132 F:\ZYNQ\FPGA_Design\ZYNQ_7020\hdmi_colorbar\hdmi_colorbar.xpr
+# Log file: F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/vivado.log
+# Journal file: F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: hdmi_colorbar_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 884.117 ; gain = 36.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hdmi_colorbar_top' [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/hdmi_colorbar_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/.Xil/Vivado-16652-abcoffice/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/.Xil/Vivado-16652-abcoffice/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'video_driver' [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/video_driver.v:23]
+	Parameter H_SYNC bound to: 11'b00000101000 
+	Parameter H_BACK bound to: 11'b00011011100 
+	Parameter H_DISP bound to: 11'b10100000000 
+	Parameter H_FRONT bound to: 11'b00001101110 
+	Parameter H_TOTAL bound to: 11'b11001110010 
+	Parameter V_SYNC bound to: 11'b00000000101 
+	Parameter V_BACK bound to: 11'b00000010100 
+	Parameter V_DISP bound to: 11'b01011010000 
+	Parameter V_FRONT bound to: 11'b00000000101 
+	Parameter V_TOTAL bound to: 11'b01011101110 
+INFO: [Synth 8-6155] done synthesizing module 'video_driver' (2#1) [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/video_driver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'video_display' [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/video_display.v:23]
+	Parameter H_DISP bound to: 11'b10100000000 
+	Parameter V_DISP bound to: 11'b01011010000 
+	Parameter WHITE bound to: 24'b111111111111111111111111 
+	Parameter BLACK bound to: 24'b000000000000000000000000 
+	Parameter RED bound to: 24'b111111110000110000000000 
+	Parameter GREEN bound to: 24'b000000001111111100000000 
+	Parameter BLUE bound to: 24'b000000000000000011111111 
+INFO: [Synth 8-6155] done synthesizing module 'video_display' (3#1) [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/video_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dvi_transmitter_top' [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/dvi_transmitter_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'asyn_rst_syn' [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/asyn_rst_syn.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_rst_syn' (4#1) [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/asyn_rst_syn.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dvi_encoder' [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/dvi_encoder.v:21]
+	Parameter CTRLTOKEN0 bound to: 10'b1101010100 
+	Parameter CTRLTOKEN1 bound to: 10'b0010101011 
+	Parameter CTRLTOKEN2 bound to: 10'b0101010100 
+	Parameter CTRLTOKEN3 bound to: 10'b1010101011 
+INFO: [Synth 8-6155] done synthesizing module 'dvi_encoder' (5#1) [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/dvi_encoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/serializer_10_to_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (6#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (6#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' (7#1) [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/serializer_10_to_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (8#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_transmitter_top' (9#1) [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/dvi_transmitter_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_colorbar_top' (10#1) [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/new/hdmi_colorbar_top.v:23]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[10]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[9]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[8]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[7]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[6]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[5]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[4]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[3]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[2]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[1]
+WARNING: [Synth 8-3331] design video_display has unconnected port pixel_ypos[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 927.738 ; gain = 80.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 927.738 ; gain = 80.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 927.738 ; gain = 80.008
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0'
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
+Finished Parsing XDC File [f:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
+Parsing XDC File [f:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
+Finished Parsing XDC File [f:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_colorbar_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_colorbar_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1302.273 ; gain = 0.000
+Parsing XDC File [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/constrs_1/new/hdmi_colorbar_top.xdc]
+Finished Parsing XDC File [F:/ZYNQ/FPGA_Design/ZYNQ_7020/hdmi_colorbar/hdmi_colorbar.srcs/constrs_1/new/hdmi_colorbar_top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1302.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.816 ; gain = 483.086
+32 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.816 ; gain = 483.086
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 16 09:42:24 2021...

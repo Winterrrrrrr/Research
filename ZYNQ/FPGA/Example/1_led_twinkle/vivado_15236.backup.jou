@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Jul 16 21:30:29 2023
+# Process ID: 15236
+# Current directory: C:/Users/Winter/Desktop/科研/Research/FPGA/Example/1_led_twinkle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9256 C:\Users\Winter\Desktop\科研\Research\FPGA\Example\1_led_twinkle\led_twinkle.xpr
+# Log file: C:/Users/Winter/Desktop/科研/Research/FPGA/Example/1_led_twinkle/vivado.log
+# Journal file: C:/Users/Winter/Desktop/科研/Research/FPGA/Example/1_led_twinkle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Winter/Desktop/科研/Research/FPGA/Example/1_led_twinkle/led_twinkle.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+close_hw_manager

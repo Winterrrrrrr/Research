@@ -1,0 +1,47 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Sep 13 20:11:33 2021
+| Host         : USER-20180123QP running 64-bit Service Pack 1  (build 7601)
+| Command      : report_drc -file uart_loopback_top_drc_opted.rpt -pb uart_loopback_top_drc_opted.pb -rpx uart_loopback_top_drc_opted.rpx
+| Design       : uart_loopback_top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++--------+----------+-----------------------+------------+
+| Rule   | Severity | Description           | Violations |
++--------+----------+-----------------------+------------+
+| IOSR-1 | Warning  | IOB set reset sharing | 1          |
+| ZPS7-1 | Warning  | PS7 block required    | 1          |
++--------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO uart_rxd connects to flops which have these u_uart_recv/uart_done_i_2_n_0, u_ila_0/inst/ila_core_inst/use_probe_debug_circuit set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

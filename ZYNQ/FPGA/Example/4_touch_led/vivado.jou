@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov 10 17:54:04 2019
+# Process ID: 16480
+# Current directory: F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13408 F:\ZYNQ\FPGA_Design\ZYNQ_7020\touch_led\touch_led.xpr
+# Log file: F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/vivado.log
+# Journal file: F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.runs/impl_1/touch_led.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.runs/impl_1/touch_led.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.runs/impl_1/touch_led.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.runs/impl_1/touch_led.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.srcs/sim_1/new/touch_led_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.srcs/sim_1/new/touch_led_tb.v
+file delete -force F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.srcs/sim_1/new/touch_led_tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.srcs/sim_1/new/tb_touch_led.v w ]
+add_files -fileset sim_1 F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.srcs/sim_1/new/tb_touch_led.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led_tb_behav.wcfg
+source tb_touch_led.tcl
+run 10 us
+current_wave_config {touch_led_tb_behav.wcfg}
+add_wave {{/tb_touch_led/u_touch_led}} 
+restart
+run 10 us
+restart
+run 10 us
+close_sim
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.runs/impl_1/touch_led.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

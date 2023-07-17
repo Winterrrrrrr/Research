@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sim_1/new/tb_lcd_rgb_colorbar.v,1573182954,verilog,,,,tb_lcd_rgb_colorbar,,,,,,,,
+F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/clk_div.v,1570670432,verilog,,F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/lcd_display.v,,clk_div,,,,,,,,
+F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/lcd_display.v,1570670432,verilog,,F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/lcd_driver.v,,lcd_display,,,,,,,,
+F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/lcd_driver.v,1570670432,verilog,,F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/lcd_rgb_colorbar.v,,lcd_driver,,,,,,,,
+F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/lcd_rgb_colorbar.v,1570670432,verilog,,F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/rd_id.v,,lcd_rgb_colorbar,,,,,,,,
+F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/rd_id.v,1570670432,verilog,,F:/ZYNQ/FPGA_Design/ZYNQ_7020/11_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sim_1/new/tb_lcd_rgb_colorbar.v,,rd_id,,,,,,,,

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 27 10:47:31 2021
+# Process ID: 596
+# Current directory: C:/Users/Administrator/Desktop/10_lcd_rgb_colorbar/lcd_rgb_colorbar.runs/synth_2
+# Command line: vivado.exe -log lcd_rgb_colorbar.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lcd_rgb_colorbar.tcl
+# Log file: C:/Users/Administrator/Desktop/10_lcd_rgb_colorbar/lcd_rgb_colorbar.runs/synth_2/lcd_rgb_colorbar.vds
+# Journal file: C:/Users/Administrator/Desktop/10_lcd_rgb_colorbar/lcd_rgb_colorbar.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source lcd_rgb_colorbar.tcl -notrace

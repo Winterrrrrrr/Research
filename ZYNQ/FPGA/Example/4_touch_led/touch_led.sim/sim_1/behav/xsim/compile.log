@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.srcs/sources_1/new/touch_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module touch_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.srcs/sim_1/new/tb_touch_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_touch_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ZYNQ/FPGA_Design/ZYNQ_7020/touch_led/touch_led.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

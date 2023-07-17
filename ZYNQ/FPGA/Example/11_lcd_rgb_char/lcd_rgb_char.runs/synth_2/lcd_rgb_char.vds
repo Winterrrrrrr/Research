@@ -1,0 +1,592 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 27 10:35:53 2021
+# Process ID: 2968
+# Current directory: C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.runs/synth_2
+# Command line: vivado.exe -log lcd_rgb_char.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lcd_rgb_char.tcl
+# Log file: C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.runs/synth_2/lcd_rgb_char.vds
+# Journal file: C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source lcd_rgb_char.tcl -notrace
+Command: synth_design -top lcd_rgb_char -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7808 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 462.688 ; gain = 93.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lcd_rgb_char' [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_rgb_char.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rd_id' [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/rd_id.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rd_id' (1#1) [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/rd_id.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (2#1) [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lcd_display' [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_display.v:23]
+	Parameter PIC_X_START bound to: 11'b00000000001 
+	Parameter PIC_Y_START bound to: 11'b00000000001 
+	Parameter PIC_WIDTH bound to: 11'b00001100100 
+	Parameter PIC_HEIGHT bound to: 11'b00001100100 
+	Parameter CHAR_X_START bound to: 11'b00000000001 
+	Parameter CHAR_Y_START bound to: 11'b00001101110 
+	Parameter CHAR_WIDTH bound to: 11'b00010000000 
+	Parameter CHAR_HEIGHT bound to: 11'b00000100000 
+	Parameter BACK_COLOR bound to: 24'b111000001111111111111111 
+	Parameter CHAR_COLOR bound to: 24'b111111110000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.runs/synth_2/.Xil/Vivado-2968-USER-20180123QP/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (3#1) [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.runs/synth_2/.Xil/Vivado-2968-USER-20180123QP/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-4471] merging register 'char_reg[10][127:0]' into 'char_reg[11][127:0]' [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_display.v:66]
+INFO: [Synth 8-4471] merging register 'char_reg[1][127:0]' into 'char_reg[31][127:0]' [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_display.v:66]
+INFO: [Synth 8-4471] merging register 'char_reg[0][127:0]' into 'char_reg[31][127:0]' [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_display.v:66]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[10] was removed.  [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_display.v:66]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[1] was removed.  [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_display.v:66]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[0] was removed.  [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_display.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_display' (4#1) [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_driver.v:23]
+	Parameter H_SYNC_4342 bound to: 11'b00000101001 
+	Parameter H_BACK_4342 bound to: 11'b00000000010 
+	Parameter H_DISP_4342 bound to: 11'b00111100000 
+	Parameter H_FRONT_4342 bound to: 11'b00000000010 
+	Parameter H_TOTAL_4342 bound to: 11'b01000001101 
+	Parameter V_SYNC_4342 bound to: 11'b00000001010 
+	Parameter V_BACK_4342 bound to: 11'b00000000010 
+	Parameter V_DISP_4342 bound to: 11'b00100010000 
+	Parameter V_FRONT_4342 bound to: 11'b00000000010 
+	Parameter V_TOTAL_4342 bound to: 11'b00100011110 
+	Parameter H_SYNC_7084 bound to: 11'b00010000000 
+	Parameter H_BACK_7084 bound to: 11'b00001011000 
+	Parameter H_DISP_7084 bound to: 11'b01100100000 
+	Parameter H_FRONT_7084 bound to: 11'b00000101000 
+	Parameter H_TOTAL_7084 bound to: 11'b10000100000 
+	Parameter V_SYNC_7084 bound to: 11'b00000000010 
+	Parameter V_BACK_7084 bound to: 11'b00000100001 
+	Parameter V_DISP_7084 bound to: 11'b00111100000 
+	Parameter V_FRONT_7084 bound to: 11'b00000001010 
+	Parameter V_TOTAL_7084 bound to: 11'b01000001101 
+	Parameter H_SYNC_7016 bound to: 11'b00000010100 
+	Parameter H_BACK_7016 bound to: 11'b00010001100 
+	Parameter H_DISP_7016 bound to: 11'b10000000000 
+	Parameter H_FRONT_7016 bound to: 11'b00010100000 
+	Parameter H_TOTAL_7016 bound to: 11'b10101000000 
+	Parameter V_SYNC_7016 bound to: 11'b00000000011 
+	Parameter V_BACK_7016 bound to: 11'b00000010100 
+	Parameter V_DISP_7016 bound to: 11'b01001011000 
+	Parameter V_FRONT_7016 bound to: 11'b00000001100 
+	Parameter V_TOTAL_7016 bound to: 11'b01001111011 
+	Parameter H_SYNC_1018 bound to: 11'b00000001010 
+	Parameter H_BACK_1018 bound to: 11'b00001010000 
+	Parameter H_DISP_1018 bound to: 11'b10100000000 
+	Parameter H_FRONT_1018 bound to: 11'b00001000110 
+	Parameter H_TOTAL_1018 bound to: 11'b10110100000 
+	Parameter V_SYNC_1018 bound to: 11'b00000000011 
+	Parameter V_BACK_1018 bound to: 11'b00000001010 
+	Parameter V_DISP_1018 bound to: 11'b01100100000 
+	Parameter V_FRONT_1018 bound to: 11'b00000001010 
+	Parameter V_TOTAL_1018 bound to: 11'b01100110111 
+	Parameter H_SYNC_4384 bound to: 11'b00010000000 
+	Parameter H_BACK_4384 bound to: 11'b00001011000 
+	Parameter H_DISP_4384 bound to: 11'b01100100000 
+	Parameter H_FRONT_4384 bound to: 11'b00000101000 
+	Parameter H_TOTAL_4384 bound to: 11'b10000100000 
+	Parameter V_SYNC_4384 bound to: 11'b00000000010 
+	Parameter V_BACK_4384 bound to: 11'b00000100001 
+	Parameter V_DISP_4384 bound to: 11'b00111100000 
+	Parameter V_FRONT_4384 bound to: 11'b00000001010 
+	Parameter V_TOTAL_4384 bound to: 11'b01000001101 
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (5#1) [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_driver.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_rgb_char' (6#1) [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/new/lcd_rgb_char.v:23]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[22]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[21]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[20]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[19]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[18]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[17]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[16]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[14]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[13]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[12]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[11]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[10]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[9]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[8]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[6]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[5]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[4]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[3]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[2]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[1]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 515.090 ; gain = 146.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 515.090 ; gain = 146.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 515.090 ; gain = 146.371
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_lcd_display/blk_mem_gen_0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_lcd_display/blk_mem_gen_0'
+Parsing XDC File [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/constrs_1/new/lcd_rgb_char.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/constrs_1/new/lcd_rgb_char.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.srcs/constrs_1/new/lcd_rgb_char.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lcd_rgb_char_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lcd_rgb_char_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 853.391 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 853.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 853.391 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 853.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 853.391 ; gain = 484.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 853.391 ; gain = 484.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_lcd_display/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 853.391 ; gain = 484.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "h_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_back" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_disp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_back" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_disp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_total" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_total" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 853.391 ; gain = 484.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 8     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 29    
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   6 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 6     
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 8     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module rd_id 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     15 Bit        Muxes := 1     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module lcd_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 29    
+	               24 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module lcd_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 8     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 6     
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "u_lcd_driver/h_disp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_lcd_driver/h_back" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_lcd_driver/h_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_lcd_driver/h_total" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_lcd_driver/v_back" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_lcd_driver/v_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_lcd_driver/v_total" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_lcd_driver/v_disp" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design lcd_rgb_char has port lcd_hs driven by constant 1
+WARNING: [Synth 8-3917] design lcd_rgb_char has port lcd_vs driven by constant 1
+WARNING: [Synth 8-3917] design lcd_rgb_char has port lcd_bl driven by constant 1
+WARNING: [Synth 8-3917] design lcd_rgb_char has port lcd_rst driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[17][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[16][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[15][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[14][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[11][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[13][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[12][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[9][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[8][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[7][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[6][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[5][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[4][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[3][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[2][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[29][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[28][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[27][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[26][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[31][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[30][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[25][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[24][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[23][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[22][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[21][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[20][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[19][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[18][127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[17][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[16][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[15][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[14][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[11][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[13][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[12][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[9][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[8][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[7][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[6][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[5][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[4][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[3][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[2][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[29][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[28][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[27][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[26][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[31][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[30][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[25][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[24][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[23][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[22][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[21][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[20][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[19][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[18][126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[17][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[16][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[15][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[14][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[11][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[13][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[12][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[9][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[8][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[7][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[6][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[5][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[4][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[3][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[2][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[29][125] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_lcd_display/char_reg[28][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[27][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[26][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[31][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[30][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[25][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[24][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[23][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[22][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[21][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[20][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[19][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[18][125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[17][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[16][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[15][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[14][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[11][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[13][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[12][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[9][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[8][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[7][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[6][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[5][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_lcd_display/char_reg[4][124] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'u_rd_id/lcd_id_reg[11]' (FDCE) to 'u_rd_id/lcd_id_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_rd_id/lcd_id_reg[0]' (FDCE) to 'u_rd_id/lcd_id_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_rd_id/lcd_id_reg[10]' (FDCE) to 'u_rd_id/lcd_id_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_rd_id/lcd_id_reg[5]' (FDCE) to 'u_rd_id/lcd_id_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_rd_id/lcd_id_reg[9]' (FDCE) to 'u_rd_id/lcd_id_reg[8]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 853.391 ; gain = 484.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 863.641 ; gain = 494.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 863.953 ; gain = 495.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 900.277 ; gain = 531.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 900.277 ; gain = 531.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 900.277 ; gain = 531.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 900.277 ; gain = 531.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 900.277 ; gain = 531.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 900.277 ; gain = 531.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 900.277 ; gain = 531.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |BUFG          |     2|
+|3     |CARRY4        |    29|
+|4     |LUT1          |    11|
+|5     |LUT2          |    55|
+|6     |LUT3          |    29|
+|7     |LUT4          |    63|
+|8     |LUT5          |    84|
+|9     |LUT6          |   141|
+|10    |MUXF7         |     9|
+|11    |FDCE          |    55|
+|12    |FDPE          |    19|
+|13    |IBUF          |     2|
+|14    |IOBUF         |     3|
+|15    |OBUF          |     6|
+|16    |OBUFT         |    21|
++------+--------------+------+
+
+Report Instance Areas: 
++------+----------------+------------+------+
+|      |Instance        |Module      |Cells |
++------+----------------+------------+------+
+|1     |top             |            |   553|
+|2     |  u_clk_div     |clk_div     |     6|
+|3     |  u_lcd_display |lcd_display |    70|
+|4     |  u_lcd_driver  |lcd_driver  |   330|
+|5     |  u_rd_id       |rd_id       |   113|
++------+----------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 900.277 ; gain = 531.559
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 900.277 ; gain = 193.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 900.277 ; gain = 531.559
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 900.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+149 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 900.277 ; gain = 543.023
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 900.277 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/11_lcd_rgb_char/lcd_rgb_char.runs/synth_2/lcd_rgb_char.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lcd_rgb_char_utilization_synth.rpt -pb lcd_rgb_char_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 27 10:36:29 2021...

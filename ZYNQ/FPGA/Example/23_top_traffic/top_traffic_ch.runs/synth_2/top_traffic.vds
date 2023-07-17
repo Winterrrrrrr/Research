@@ -1,0 +1,360 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Aug  6 12:19:04 2021
+# Process ID: 21656
+# Current directory: D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.runs/synth_2
+# Command line: vivado.exe -log top_traffic.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_traffic.tcl
+# Log file: D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.runs/synth_2/top_traffic.vds
+# Journal file: D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source top_traffic.tcl -notrace
+Command: synth_design -top top_traffic -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2216 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 429.668 ; gain = 97.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_traffic' [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/top_traffic.v:28]
+INFO: [Synth 8-6157] synthesizing module 'traffic_light' [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/traffic_light.v:28]
+	Parameter TIME_LED_Y bound to: 3 - type: integer 
+	Parameter TIME_LED_R bound to: 30 - type: integer 
+	Parameter TIME_LED_G bound to: 27 - type: integer 
+	Parameter WIDTH bound to: 25000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/traffic_light.v:79]
+WARNING: [Synth 8-5788] Register ew_time_reg in module traffic_light is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/traffic_light.v:81]
+WARNING: [Synth 8-5788] Register sn_time_reg in module traffic_light is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/traffic_light.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'traffic_light' (1#1) [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/traffic_light.v:28]
+INFO: [Synth 8-6157] synthesizing module 'seg_led' [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/seg_led.v:28]
+	Parameter WIDTH bound to: 50000 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/seg_led.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'seg_led' (2#1) [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/seg_led.v:28]
+INFO: [Synth 8-6157] synthesizing module 'led' [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/led.v:28]
+	Parameter TWINKLE_CNT bound to: 20000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/led.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'led' (3#1) [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/led.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'top_traffic' (4#1) [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/sources_1/new/top_traffic.v:28]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 486.297 ; gain = 154.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 486.297 ; gain = 154.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 486.297 ; gain = 154.059
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/constrs_1/new/top_traffic.xdc]
+Finished Parsing XDC File [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/constrs_1/new/top_traffic.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.srcs/constrs_1/new/top_traffic.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_traffic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_traffic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 842.082 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 842.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 842.082 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 842.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 842.082 ; gain = 509.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 842.082 ; gain = 509.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 842.082 ; gain = 509.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'traffic_light'
+INFO: [Synth 8-5546] ROM "clk_1hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cnt_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'traffic_light'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 842.082 ; gain = 509.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module traffic_light 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module seg_led 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module led 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "u1_seg_led/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "u0_traffic_light/clk_1hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u1_seg_led/cnt_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u2_led/led" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 842.082 ; gain = 509.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 842.082 ; gain = 509.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 842.082 ; gain = 509.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 850.473 ; gain = 518.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 850.473 ; gain = 518.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 850.473 ; gain = 518.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 850.473 ; gain = 518.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 850.473 ; gain = 518.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 850.473 ; gain = 518.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 850.473 ; gain = 518.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    18|
+|3     |LUT1   |     2|
+|4     |LUT2   |    30|
+|5     |LUT3   |    10|
+|6     |LUT4   |    24|
+|7     |LUT5   |    38|
+|8     |LUT6   |    50|
+|9     |FDCE   |    88|
+|10    |FDPE   |    10|
+|11    |FDRE   |    12|
+|12    |IBUF   |     2|
+|13    |OBUF   |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+--------------+------+
+|      |Instance           |Module        |Cells |
++------+-------------------+--------------+------+
+|1     |top                |              |   303|
+|2     |  u0_traffic_light |traffic_light |   125|
+|3     |  u1_seg_led       |seg_led       |    77|
+|4     |  u2_led           |led           |    80|
++------+-------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 850.473 ; gain = 518.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 850.473 ; gain = 162.449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 850.473 ; gain = 518.234
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 858.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 858.918 ; gain = 539.594
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 858.918 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/ZYNQ7020/FPGA Design/ZYNQ_7020_FPGA/RLT/top_traffic/top_traffic_ch.runs/synth_2/top_traffic.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_traffic_utilization_synth.rpt -pb top_traffic_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  6 12:19:31 2021...

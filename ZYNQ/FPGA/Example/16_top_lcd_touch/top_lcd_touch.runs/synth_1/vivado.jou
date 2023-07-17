@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 13 14:21:55 2022
+# Process ID: 5716
+# Current directory: E:/LCD_TOUCH/NAVIGATOR_ZYNQ/ZYNQ_7010_FPGA/top_lcd_touch/top_lcd_touch.runs/synth_1
+# Command line: vivado.exe -log top_lcd_touch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_lcd_touch.tcl
+# Log file: E:/LCD_TOUCH/NAVIGATOR_ZYNQ/ZYNQ_7010_FPGA/top_lcd_touch/top_lcd_touch.runs/synth_1/top_lcd_touch.vds
+# Journal file: E:/LCD_TOUCH/NAVIGATOR_ZYNQ/ZYNQ_7010_FPGA/top_lcd_touch/top_lcd_touch.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_lcd_touch.tcl -notrace
